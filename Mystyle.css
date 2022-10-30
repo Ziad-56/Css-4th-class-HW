@@ -1,0 +1,151 @@
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+}
+.heading_one{
+    text-align: center;
+}
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav_one{
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 70%;
+    margin: 10px auto;
+    height: 63px;
+}
+.nav_one ol{
+    text-align: center;
+}
+.nav_one ol li{
+    display: inline-block;
+}
+.nav_one ol li a{
+    display: inline-block;
+    color: #F04BF5;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 2;
+}
+.nav_one ol li:hover a::after{
+    height: 100%;
+
+}
+.nav_one ol li a::after{
+    content: "";
+    background-color: wheat;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: .2s;
+}
+
+
+.nav_two{
+    background: #003973;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 70%;
+    margin: 10px auto;
+    height: 63px;
+}
+.nav_two ol{
+    text-align: center;
+}
+.nav_two ol li{
+    display: inline-block;
+}
+.nav_two ol li a{
+    display: inline-block;
+    color: #1CEA52;
+    padding: 21px 30px;
+    position: relative;
+    z-index: 2;
+}
+.nav_two ol li a::after{
+    content:"";
+    background-color: #EDF4EF;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    z-index: -1;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+.nav_two ol li:hover a::after{
+    width: 100%;
+}
+
+.nav_three{
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 80%;
+    margin: 10px auto;
+    height: 65px;
+}
+.nav_three ol{
+    text-align: center;
+}
+.nav_three ol li{
+    display: inline-block;
+}
+.nav_three ol li a{
+    display: inline-block;
+    color: #EC1212;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 10;
+}
+.nav_three ol li a::after{
+    content:"";
+    background-color: #CAD688;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    z-index: -1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.nav_three ol li a::before{
+    content: "";
+    background-color: #C8ECEA;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.nav_three ol li:hover a::after{
+    width: 50%;
+}
+.nav_three ol li:hover a::before{
+    width: 50%;
+}
